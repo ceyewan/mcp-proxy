@@ -1,0 +1,24 @@
+{
+    "proxy": {
+        "baseURL": "http://localhost:9090",
+        "addr": ":9090",
+        "name": "MCP Proxy",
+        "version": "2.0.0",
+        "type": "sse",
+        "options": {
+            "panicIfInvalid": false,
+            "logEnabled": true,
+            "authTokens": []
+        }
+    },
+    "servers": {
+        "weather": {
+            "transport": "sse",
+            "url": "http://127.0.0.1:8080/sse/"
+        },
+        "mcp": {
+            "transport": "sse",
+            "url": "http://127.0.0.1:8080/sse/"
+        }
+    }
+}
